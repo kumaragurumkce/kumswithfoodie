@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+overflow-x: hidden;
+}
+#navbar {
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    padding: .5rem 7rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(201, 195, 195, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+.navbar .navbar-brand {
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    color: #FF0801 !important;
+    text-decoration: none;
+   font-weight: 1000;
+
+}
+.nav-item{
+    padding-left: 1.7rem;
+}
+/* Add padding and underline effect to nav links */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #FF0801;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Add padding here */
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #FF0801;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+ 
+}
+
+.navbar-nav .nav-link:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
+
+}
+.navbar-nav .nav-link:hover{
+    color: rgb(238, 238, 238);
+}
+#row1{
+    background:black;
+}
+.indian{
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 900;
+}
+section{
+    scroll-snap-align: start;
+    
+}
+main{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type:y mandatory ;
+}
+
+.dieth1{
+    font-family: 'Kaushan Script', cursive;   
+}
+
+.container-food,.container-fluid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+}
+.container-food{
+    padding: 3rem;
+}
+.our-product{
+    margin-top: 30px;
+}
+#ourproduct .add-cart{
+    font-size: 25px;
+}
+.card-titl{
+    font-size: 25px;
+}
+
+.card-price{
+    font-size: 23px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.card-f{
+    background: #FF0801;
+}
+.container-food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;   flex-wrap: wrap;
+    gap: 1rem;
+}
+.card-f{
+    display: grid;
+    grid-template-columns: repeat(autofit,minmax(220px,auto));
+    justify-content: center;
+    align-content: center;
+    background-color: #FF0801;
+    border-radius: 10px;
+    box-shadow: rgba(148, 145, 145, 0.35) 0px 5px 15px;
+    padding: 10px;
+    position: relative;
+}
+.img-order{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 10px solid black;
+transition: 0.3s;
+object-fit: cover;
+}
+.pic{
+ overflow: hidden; 
+ border-radius: 100px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.pic:hover img{
+    transform: scale(1.1);
+}
+.card-price{
+    color:#d4ffdf;
+    position: relative;
+    right: 10px;   
+}
+.cart-btn{
+    padding-left: 30px;
+}
+.cart-div i{
+    font-size: 30px;
+    color: #FF0801;
+}
