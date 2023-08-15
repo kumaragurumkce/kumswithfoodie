@@ -17,9 +17,10 @@ const quantity=document.querySelectorAll(".quantity");
 quantity.forEach(qq=>{
     qq.addEventListener('change',qtnchange);
 });
-UpdateTotal();
 
+UpdateTotal();
 }
+//.pop-close
 const cartclose = document.querySelector(".close");
 const cartElement = document.querySelector(".cart");
 const cartopen = document.querySelector(".cart-div i");
@@ -29,6 +30,7 @@ cartopen.addEventListener('click', () => {
 cartclose.addEventListener('click', () => {
     cartElement.classList.remove("cart-active");
 });
+
 function qtnchange() {
     if (isNaN(this.value) || this.value < 1) {
         this.value = 1;
@@ -95,4 +97,22 @@ function UpdateTotal() {
       prod.querySelector(".cart-rate").innerText = "Rs." + (price * qty);
  }); // Update the display within the loop
     totalrs.innerHTML = "Total Rs." + total;
+
+if(listItems.length!==0){
+
+    const popclose=document.querySelector(".pop-close");
+    const popup=document.querySelector(".pop-up");
+    const popopen=document.querySelector(".place-order");
+    popopen.addEventListener('click',popfunctionopen);
+    popclose.addEventListener('click',popfunctionclose);
+    function popfunctionopen() {
+        popup.classList.add("pop-main");
+     }
+     function popfunctionclose() {
+         popup.classList.remove("pop-main");
+     }
+     popclose.addEventListener('click', () => {
+        cartElement.classList.remove("cart-active");
+    });
+}
 }
