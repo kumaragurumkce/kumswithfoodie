@@ -1,176 +1,259 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Order</title>
-        <link rel="stylesheet" href="1ORDER.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
 
-    <body>git
-        <header>
-          <h3>Shop Order</h3>  
-          <div class="cart-div">
-            <button class="Cartbtn"><i class="fa fa-shopping-cart"></i></button>
-        </div>
-        </header>
+<head>
+  <title>Food</title>
+</head>
 
+<body>
+  <link rel="stylesheet" href="food.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
+  <nav class="navbar navbar-expand-lg  " id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Kanmani</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ourproduct">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ourproduct">Our Product</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <main>
     <div class="cart">
       <div class="title-close">
-      <h4 class="cartitemstitle">Cart List</h4>
-      <button class="close-btn"><i class="fa fa-close"></i></button>
-    </div>
-      <div class="cart-content">
-       
+        <div class="cart-list">Cart List</div>
+        <i class="close"></i>
       </div>
-      <h4 class="total-rs">Total Rs: 0</h4>
-      <button class="place-order">Place Order</button>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">SHIRT</h5>
-      <h6 class="card-rate">RS.40</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">PANT</h5>
-      <h6 class="card-rate">RS.90</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">KIDS</h5>
-      <h6 class="card-rate">RS.41</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">SAREE</h5>
-      <h6 class="card-rate">RS.700</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">T-SHIRT</h5>
-      <h6 class="card-rate">RS.500</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">HOODIES</h5>
-      <h6 class="card-rate">RS.300</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  
-</div>
-
-<script src="1ORDER.js">
-
-</script>
-
-    </body>
-=======
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Order</title>
-        <link rel="stylesheet" href="1ORDER.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-
-    <body>
-        <header>
-          <h3>Shop Order</h3>  
-          <div class="cart-div">
-            <button class="Cartbtn"><i class="fa fa-shopping-cart"></i></button>
+      <div class="cart-content">
+       <!--<div class="cart-box">
+        <img src="imgs/butterice.jpg" class="img-cart" alt="">
+        <div class="cart-details">
+          <div class="cart-titl">Butter Ice </div>
+          <div class="cart-amount">
+            <div class="cart-price">
+              Rs. 300
+            </div>
+            <div class="cart-rate">
+              Rs. 300
+            </div>
+          </div>
+          <input type="number" class="quantity">
         </div>
-        </header>
-
-    <div class="cart">
-      <div class="title-close">
-      <h4 class="cartitemstitle">Cart List</h4>
-      <button class="close-btn"><i class="fa fa-close"></i></button>
+        <i class="gg-trash"></i>
+      </div>-->
     </div>
-      <div class="cart-content">
-       
+    
+    <div class="total-rs">Rs: 0</div>
+    <button class="place-order">Place Order</button>
+    </div>
+
+    <section id="sec-1">
+      <div class="container-fluid">
+        <div class="row" style="height: 23rem;">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12  p-0">
+            <img src="imgs/d2.jpeg" class="diet1-img" alt="">
+          </div>
+          <div class="Intro-1 col-xl-6 col-lg-6 col-md-6 col-12  p-0">
+            <div class="intro-1 text-center">Order Food</div>
+            <div class="intro-2 text-center">Online</div>
+            <div class="intro-3 text-center">In India</div>
+            <div class="intro-4 text-center">Indian Resaurant</div>
+          </div>
+        </div>
       </div>
-      <h4 class="total-rs">Total Rs: 0</h4>
-      <button class="place-order">Place Order</button>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">SHIRT</h5>
-      <h6 class="card-rate">RS.40</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">PANT</h5>
-      <h6 class="card-rate">RS.90</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">KIDS</h5>
-      <h6 class="card-rate">RS.41</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">SAREE</h5>
-      <h6 class="card-rate">RS.700</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">T-SHIRT</h5>
-      <h6 class="card-rate">RS.500</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  <div class="card">
-    <div class="pic">
-      <img src="pant.jpg" class="card-img" alt="...">
-    </div>
-      <h5 class="card-title">HOODIES</h5>
-      <h6 class="card-rate">RS.300</h6>
-    <i id="icon" class="add-cart fa fa-shopping-cart"></i>
-  </div>
-  
-</div>
 
-<script src="1ORDER.js">
+      <div class="heading-1">What's On Your Mind?</div>
+      <div class="row" style="margin-left: 140px; padding: 10px; ">
+        <div class="col-xl-1 mx-lg-4">
+          <img src="imgs/f2.png" alt="">
+          <div class="htag">Diet</div>
+        </div>
+        <div class="col-xl-1 mx-lg-4">
+          <img src="imgs/f3.png" alt="">
+          <div class="htag">Burger</div>
+        </div>
+        <div class="col-xl-1 mx-lg-4">
+          <img src="imgs/f4.png" alt="">
+          <div class="htag">Biscuit</div>
+        </div>
+        <div class="col-xl-1 mx-lg-4">
+          <img src="imgs/f5.png" alt="">
+          <div class="htag">Tea</div>
+        </div>
+        <div class="col-xl-1 mx-lg-4">
+          <img src="imgs/f7.png" alt="">
+          <div class="htag">Puri</div>
+        </div>
+        <div class="col-xl-1 mx-lg-4">
+          <img src="imgs/f8.png" alt="">
+          <div class="htag">Mushroom</div>
+        </div>
+      </div>
+    </section>
+    <section id="ourproduct">
+      <div class="container-fluid">
+        <div class="our-product">
+          Our Product
+        </div>
+      </div>
+      <div class="container-food">
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/curd.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Curd Rice
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/butterice.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Butterscotch ice
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/chappathi.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Chapati
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/dosai.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Dosai
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/ice1.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Cone Ice
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/kodhamali.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Kothamalli Rice
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/lemon.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Lemon Rice
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/porratta.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Porotta
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/sambar.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Sambar Rice
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+        <div class="card-f">
+          <div class="pic">
+            <img src="imgs/teaimg.jpg" class="img-order" alt="">
+          </div>
+          <div class="card-titl">
+            Green Tea
+          </div>
+          <div class="card-price">
+          Rs.600
+          </div>
+          <i class="add-cart fa fa-shopping-cart"></i>
+        </div>
+      </div>
+      </div>
+    </section>
 
-</script>
+    <div class="cart-div">
+      <i class="main-cart fa fa-shopping-cart"></i>
+    </div>
 
-    </body>
->>>>>>> 891ccb4ae86a0165feb36e2b4e9a7bdd5cf27ebc
+  </main>
+  <script src="food.js"></script>
+
+</body>
+
 </html>

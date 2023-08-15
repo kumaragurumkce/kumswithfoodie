@@ -16,7 +16,8 @@ overflow-x: hidden;
     top: 0;
     left: 0;
     box-shadow: rgba(201, 195, 195, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
+z-index: 3;   
+}
 
 .navbar .navbar-brand {
     font-size: 25px;
@@ -59,9 +60,7 @@ overflow-x: hidden;
 .navbar-nav .nav-link:hover{
     color: rgb(238, 238, 238);
 }
-#row1{
-    background:black;
-}
+
 .indian{
     margin-top: 40px;
     font-size: 40px;
@@ -69,16 +68,49 @@ overflow-x: hidden;
 }
 section{
     scroll-snap-align: start;
-    
+    height: 100vh;
+    width: 100%;
+}
+
+.diet1-img{
+    height: 82%;
+    width: 100%;
+    object-fit: cover;
+}
+.intro-1,.intro-2,.intro-3{
+    margin: 25px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+}
+.intro-1{
+    color: rgb(255, 94, 0);
+}  .intro-2{color: #d4ffdf;} .intro-3{color: green;}
+.intro-4{
+    margin: 55px;
+    font-size: 45px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+color: #FF0801;
+}
+.heading-1{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 100px;
+    padding: 10px;
+}
+.htag{
+    margin-left: 40px;
+position: relative;
+bottom:15px;
+font-size: 25px;
+font-weight: 600;
 }
 main{
     width: 100%;
     height: 100vh;
     scroll-snap-type:y mandatory ;
-}
-
-.dieth1{
-    font-family: 'Kaushan Script', cursive;   
 }
 
 .container-food,.container-fluid{
@@ -87,22 +119,20 @@ main{
     align-items: center;
     background: rgb(0,0,0);
 }
-.container-food{
-    padding: 3rem;
-}
+
 .our-product{
-    margin-top: 30px;
-}
-#ourproduct .add-cart{
-    font-size: 25px;
-}
-.card-titl{
-    font-size: 25px;
+    margin-top: 25px;
+   font-size: 40px;
+   font-weight: 600;
+   color:#cbecd3
 }
 
-.card-price{
-    font-size: 23px;
+.card-titl{
+    font-size: 25px;
+  font-weight: 700;
+  color: black;
 }
+
 
 span{
     font-size: 20px;
@@ -115,7 +145,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;   flex-wrap: wrap;
+    padding: 1rem;   flex-wrap: wrap;
     gap: 1rem;
 }
 .card-f{
@@ -146,14 +176,139 @@ object-fit: cover;
     transform: scale(1.1);
 }
 .card-price{
+font-size: 23px;
     color:#d4ffdf;
-    position: relative;
-    right: 10px;   
+ font-weight: 600;      
 }
 .cart-btn{
     padding-left: 30px;
 }
+.card-f .add-cart{
+    font-size: 28px;
+    color: white;
+}
 .cart-div i{
     font-size: 30px;
     color: #FF0801;
+}
+.cart-div i{position: fixed;
+top: 300px;
+background:#F7C904;
+border-radius: 5px;
+height: 35px;
+width: 35px;
+padding: 15px auto;
+left:95%;
+}
+.cart{
+    position: fixed;
+    background: #FF0801;
+    height: 100vh;
+    width: 312px;
+    z-index: 1;
+    right:0;
+    transition: 0.5s;
+    right:-100%;
+    transition-timing-function: ease-in-out;
+visibility: visible;
+}
+.title-close{
+    display: flex;
+justify-content: space-around;
+    margin: 10px;
+}
+.cart-list{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cart-active{
+      right: 0;
+    transition:0.5s;
+}
+.close {
+    position: absolute;
+    right: 32px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    padding: 10px;  
+  align-items: center;
+position: relative;
+
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+}
+  .img-cart{
+    height:70px;
+    width:70px;
+  }
+.cart-titl{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.cart-amount{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cart-price , .cart-rate{
+    font-size:18px ;
+    font-weight: 500;
+}
+.quantity{
+    width: 40px;
+    height: 20px;
+   background-color: rgb(182, 104, 104);
+   border-radius: 5px;
+}
+.gg-trash{
+left: 20px;
+position: absolute;
+bottom: 25px;
+}
+span{
+    position: relative;
+    left: 100px;
+}
+.total-rs{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.place-order{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 10px;
+    padding:5px 5px;
+    color: rgb(233, 230, 230);
+    background: #c02c21;
+border-radius: 25px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
