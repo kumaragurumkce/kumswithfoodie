@@ -301,7 +301,7 @@ span{
     font-weight: 500;
     padding-left: 10px;
 }
-.place-order{
+.btn-order{
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -368,3 +368,81 @@ font-size: 15px;
 padding: 5px 0 15px;
 color: white;
 }
+.btn-click{
+    font-size: 20px;
+       margin: 45px;
+       margin-top: 20px;
+       padding: 5px 30px;
+       box-sizing: border-box;
+       border: none;
+       background: rgb(246,10,5);
+       font-weight: 700;
+border-radius: 10px;
+    }
+   .names{
+    width: 100%;
+}
+.enter-name{
+    font-size: 25px;
+margin-bottom: 15px;color: #ff0000;
+font-weight: 600;
+font-family: 'ADLaM Display', cursive;
+}
+input[type=text]{
+    height: 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    background: #c00d0d;
+    color: aliceblue;
+}
+   .div-form{
+    position: fixed;
+z-index:200;
+left: 40%;
+top: 25%;
+padding: 20px 45px;
+background-color:rgb(0, 0, 0);
+height: 200px;
+width: 300px;
+transition: 0.4s;
+transition-timing-function: ease-in-out;
+border-radius: 20px;
+}.welcome{padding: 0 20px; font-size: 30px; color:rgb(253,8,2); font-family: 'ADLaM Display', cursive;}
+.doneSymbol{
+    position: fixed;
+    z-index: 111;
+    background-color:rgb(0, 0, 0);
+height: 200px;
+width: 300px;
+left: 40%;
+top: 25%;
+padding: 10px 10px 10px 50px;
+font-size: 60px;
+transition-timing-function: ease-in-out;
+border-radius: 20px;
+}
+.response{
+    padding: 0px 25px 0px 50px;
+    font-size: 40px;
+font-weight: 700;
+color: rgb(253,8,2);
+font-family: 'Philosopher', sans-serif;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  .animated-icon {
+    animation: bounce 1.7s infinite;
+padding: 0px 0 17px 70px ;
+    color:rgb(253,8,2);    font-size: 48px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
